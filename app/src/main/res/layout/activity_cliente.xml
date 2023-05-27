@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    android:layout_height="match_parent"
+    tools:context=".ClienteActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/imagen" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Clientes" />
+
+    <EditText
+        android:id="@+id/etidentificación"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Escriba identificación"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:hint="Escriba nombre" />
+
+    <EditText
+        android:id="@+id/etcorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:hint="Escriba el correo"
+        android:textColorHint="@color/black"
+        android:inputType="textEmailAddress" />
+
+    <CheckBox
+        android:id="@+id/cbactivo"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:enabled="false"
+        android:text="Activo" />
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:onClick="Guardar"
+            android:text="Guardar"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:backgroundTint="@color/black"
+            android:onClick="Consultar"
+            android:text="Consultar"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:backgroundTint="@color/black"
+            android:onClick="Anular"
+            android:text="Anular"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="128dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:backgroundTint="@color/black"
+            android:onClick="Cancelar"
+            android:text="Cancelar"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:backgroundTint="@color/black"
+            android:onClick="Activar"
+            android:text="Activar"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:backgroundTint="@color/black"
+            android:onClick="Regresar"
+            android:text="Regresar"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </LinearLayout>
+</LinearLayout>

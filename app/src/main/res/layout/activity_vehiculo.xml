@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo"
+    android:layout_height="match_parent"
+    tools:context=".VehiculoActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/imagen" />
+
+    <TextView
+        android:id="@+id/textvehiculos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="Vehículos"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etplaca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:hint="Placa Automóvil"
+        android:inputType="textPersonName"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etmodelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:hint="Modelo"
+        android:inputType="number"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etmarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:gravity="center"
+        android:hint="Marca del vehículo"
+        android:inputType="textPersonName"
+        android:textSize="30dp" />
+
+    <CheckBox
+        android:id="@+id/cbactivov"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:enabled="false"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:text="Activo"
+        android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/bvguardar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="GuardarV"
+                android:text="Guardar"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/bvconsultar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="ConsultarV"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="Consultar"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/bvanular"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="AnularV"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="Anular"
+                android:textSize="20dp" />
+
+
+            <Button
+                android:id="@+id/bvcancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-condensed"
+                android:onClick="CancelarV"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:text="Cancelar"
+                android:textSize="20dp" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="ActivarV"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:text="Activar"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:textSize="25dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/white"
+            android:onClick="Regresar"
+            android:text="Regresar" />
+    </LinearLayout>
+</LinearLayout>
